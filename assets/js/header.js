@@ -1,3 +1,5 @@
+//Bootstrap icons are licenses under the MIT license. Link to license: https://github.com/twbs/icons/blob/main/LICENSE.md
+
 class Header extends HTMLElement {
     constructor() {
         super();
@@ -17,8 +19,8 @@ class Header extends HTMLElement {
                 <nav>
                     <ul>
                         <li class="nav-item">Home</li>
-                        <li class="nav-item">Source code</li>
-                        <li class="nav-item">App</li>
+                        <li class="nav-item"><i class="bi bi-github"></i>Source code</li>
+                        <li class="nav-item"><i class="bi bi-display"></i>App</li>
                     </ul>
                 </nav>
             </header>
