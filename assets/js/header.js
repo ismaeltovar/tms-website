@@ -18,9 +18,9 @@ class Header extends HTMLElement {
                 </div>
                 <nav>
                     <ul>
-                        <li class="nav-item">Home</li>
-                        <li class="nav-item"><i class="bi bi-github"></i>Source code</li>
-                        <li class="nav-item"><i class="bi bi-display"></i>App</li>
+                        <!-- Navbar navigation links -->
+                        <li class="nav-item"><a href="#" target="_blank"><i class="bi bi-display"></i></a></li>
+                        <li class="nav-item"><a href="#" target="_blank"><i class="bi bi-github"></i></a></li>
                     </ul>
                 </nav>
             </header>
