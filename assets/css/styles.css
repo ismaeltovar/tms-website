@@ -5,3 +5,56 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+/* Styling for items in the header-component */
+header {
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: .5em;
+}
+
+nav {
+    position: absolute;
+    right: .5em;
+    top: .5em;
+}
+
+ul {
+    right: .5em;
+    margin-right: .5em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+li {
+    margin: .5em;
+}
+
+.nav-item {
+    font-size: 2em;
+}
+
+a[href*="index"] {
+    display: flex;
+    margin-left: .5em;
+    margin-top: .5em;
+}
+
+.main-logo {
+    margin: .5em;
+}
+
+.main-title {
+    margin: .5em;
+}
