@@ -10,17 +10,17 @@ class Header extends HTMLElement {
         this.innerHTML = `
             <header>
                 <!--Main logo with text (top left corner of website) -->
-                <div class="main-logo">
+                <div class="title-and-logo">
                     <a href="index.html">
-                        <img src="assets/icon/favicon.ico" alt="Track My Stock! logo">
-                        <h1>Track My Stock!</h1>
+                        <img class="main-logo" src="assets/icon/favicon.ico" alt="Track My Stock! logo">
+                        <h1 class="main-title">Track My Stock!</h1>
                     </a>
                 </div>
                 <nav>
                     <ul>
                         <!-- Navbar navigation links -->
-                        <li class="nav-item"><a href="#" target="_blank"><i class="bi bi-display"></i></a></li>
-                        <li class="nav-item"><a href="#" target="_blank"><i class="bi bi-github"></i></a></li>
+                        <li><a class="nav-item" href="#" target="_blank"><i class="bi bi-display"></i></a></li>
+                        <li><a class="nav-item" href="#" target="_blank"><i class="bi bi-github"></i></a></li>
                     </ul>
                 </nav>
             </header>
