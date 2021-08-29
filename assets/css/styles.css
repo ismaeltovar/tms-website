@@ -14,7 +14,7 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-/* Styling for items in the header-component */
+/*--- Styling for items in the header-component ---*/
 header {
     position: -webkit-sticky;
     top: 0;
@@ -59,7 +59,7 @@ a[href*="index"] {
     margin: .5em;
 }
 
-/* Styling for the intro section (after the header-component) */
+/*--- Styling for the intro section (after the header-component) ---*/
 
 .intro-section {
     background-color: rgba(0, 170, 0, .5);
@@ -102,7 +102,7 @@ a[href*="index"] {
     padding-right: .5em;
 }
 
-/* Styling for the attributes section (under the intro-section) */
+/*--- Styling for the attributes section (under the intro-section) ---*/
 
 .attributes-section {
     display: flex;
@@ -147,3 +147,20 @@ a[href*="index"] {
     padding: .2em;
 }
 
+/*--- Styling for the footer-component ---*/
+
+footer {
+    background-color: rgb(0, 150, 0);
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.cr-notice,
+.hosting-notice {
+    padding: .3em;
+}
