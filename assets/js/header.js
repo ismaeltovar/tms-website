@@ -20,7 +20,7 @@ class Header extends HTMLElement {
                     <ul>
                         <!-- Navbar navigation links -->
                         <li><a class="nav-item" href="#" target="_blank"><i class="bi bi-display"></i></a></li>
-                        <li><a class="nav-item" href="#" target="_blank"><i class="bi bi-github"></i></a></li>
+                        <li><a class="nav-item" href="https://github.com/ismaeltovar/track-my-stock" target="_blank"><i class="bi bi-github"></i></a></li>
                     </ul>
                 </nav>
             </header>
