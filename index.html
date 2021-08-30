@@ -9,6 +9,8 @@
         <link href="assets/icon/favicon.ico" rel="icon">
         <script src="assets/js/header.js"></script>
         <script src="assets/js/footer.js"></script>
+        <script src="assets/js/notice.js"></script>
+        <script src="assets/js/redirect.js"></script>
         <title>Track My Stock! | The open-source stock tracking app.</title>
     </head>
     <header-component></header-component> <!-- Src located in js folder under assets--->
@@ -17,8 +19,8 @@
             <section class="intro-section">
                 <h3 class="intro-description">A Simple, Free, and Open-Source stock tracking app.</h3>
                 <div class="intro-buttons">
-                    <a class="app-button" href="#" target="_blank"><i class="bi bi-display"></i>App</a>
-                    <a class="src-button" href="https://github.com/ismaeltovar/track-my-stock" target="_blank"><i class="bi bi-github"></i>Source code</a>
+                    <button id="app-button" onclick="devNotice()"><i class="bi bi-display"></i>App</a></button>
+                    <button id="src-button" onclick="redirectSrc()" target="_blank"><i class="bi bi-github"></i>Source code</button>
                 </div>
             </section>
             <section class="attributes-section">

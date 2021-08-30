@@ -1,0 +1,1 @@
+redirectSrc = () => window.location.href='https://github.com/ismaeltovar/track-my-stock';

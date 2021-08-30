@@ -1,0 +1,1 @@
+devNotice = () => alert("This app is currently under development. Check back later for more details."); 
