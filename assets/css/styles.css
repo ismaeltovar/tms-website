@@ -30,7 +30,6 @@ nav {
 }
 
 ul {
-    right: .5em;
     margin-right: .5em;
     list-style-type: none;
     display: flex;
@@ -39,10 +38,18 @@ ul {
 
 li {
     margin: .5em;
+    padding: .5em;
 }
 
-.nav-item {
+button.nav-item {
+    color: rgb(255, 255, 255);
     font-size: 2em;
+    background-color: rgb(0, 150, 0);
+    border-color: rgb(0, 150, 0);
+}
+
+i#nav-icon {
+    padding: .5em;
 }
 
 a[href*="index"] {
@@ -133,14 +140,9 @@ a[href*="index"] {
     background-color: rgba(0, 200, 0, .6);
 }
 
-/* design icon */
-
-
 #fast.attribute {
     background-color: rgba(200, 0, 0, .6);
 }
-
-
 
 #data.attribute {
     background-color: rgba(0, 0, 200, .6);
