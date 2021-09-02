@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+/* Custom color properties */
+:root {
+    --green: rgb(0, 150, 0);
+    --transparent-green: rgba(0, 200, 0, .6);
+    --light-green: rgb(0, 170, 0);
+    --transparent-light-green: rgba(0, 170, 0, .5);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --transparent-red: rgba(200, 0, 0, .6);
+    --transparent-blue: rgba(0, 0, 200, .6);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -42,10 +54,10 @@ li {
 }
 
 button.nav-item {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-size: 2em;
-    background-color: rgb(0, 150, 0);
-    border-color: rgb(0, 150, 0);
+    background-color: var(--green);
+    border-color: var(--green);
 }
 
 i#nav-icon {
@@ -69,7 +81,7 @@ a[href*="index"] {
 /*--- Styling for the intro section (after the header-component) ---*/
 
 .intro-section {
-    background-color: rgba(0, 170, 0, .5);
+    background-color: var(--transparent-light-green);
     display: block;
 }
 
@@ -90,7 +102,7 @@ a[href*="index"] {
 #src-button, 
 #app-button {
     font-size: 1.5em;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     display: inline-block;
     padding: .5em;
     border-radius: .5em;
@@ -98,15 +110,15 @@ a[href*="index"] {
 
 #src-button:hover, 
 #app-button:hover {
-    border-color: rgb(0, 0, 0);
+    border-color: var(--black);
 }
 
 #app-button {
-    background-color: rgb(0, 150, 0);
+    background-color: var(--green);
 }
 
 #src-button {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--black);
 }
 
 #app-button i, 
@@ -119,7 +131,7 @@ a[href*="index"] {
 .attributes-section {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(0, 170, 0);
+    background-color: var(--light-green);
     padding: 1em;
     height: 30vh;
 }
@@ -137,15 +149,15 @@ a[href*="index"] {
 }
 
 #design.attribute {
-    background-color: rgba(0, 200, 0, .6);
+    background-color: var(--transparent-green);
 }
 
 #fast.attribute {
-    background-color: rgba(200, 0, 0, .6);
+    background-color: var(--transparent-red);
 }
 
 #data.attribute {
-    background-color: rgba(0, 0, 200, .6);
+    background-color: var(--transparent-blue);
 }
 
 /* Attribute section Icons */
@@ -157,7 +169,7 @@ a[href*="index"] {
 /*--- Styling for the footer-component ---*/
 
 footer {
-    background-color: rgb(0, 150, 0);
+    background-color: var(--green);
 }
 
 .footer-text {
