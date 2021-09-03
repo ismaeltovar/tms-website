@@ -27,7 +27,7 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 /*--- Styling for items in the header-component ---*/
-header {
+header { 
     position: -webkit-sticky;
     top: 0;
     display: flex;
@@ -53,15 +53,12 @@ li {
     padding: .5em;
 }
 
-button.nav-item {
+i#nav-icon {
     color: var(--white);
-    font-size: 2em;
+    font-size: 2.2em;
     background-color: var(--green);
     border-color: var(--green);
-}
-
-i#nav-icon {
-    padding: .5em;
+    
 }
 
 a[href*="index"] {
