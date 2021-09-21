@@ -19,8 +19,8 @@ class Header extends HTMLElement {
                 <nav>
                     <ul>
                         <!-- Navbar navigation links -->
-                        <li><a id="app" class="nav-item" onclick="devNotice();"><i id="nav-icon" class="bi bi-display"></i></a></li>
-                        <li><a id="src" class="nav-item" href="https://github.com/ismaeltovar/track-my-stock" target="_blank"><i id="nav-icon" class="bi bi-github"></i></a></li>
+                        <li><a id="nav-link-app" class="nav-item" onclick="devNotice();"><i id="nav-icon" class="bi bi-display"></i></a></li>
+                        <li><a id="nav-link-src" class="nav-item" href="https://github.com/ismaeltovar/track-my-stock" target="_blank"><i id="nav-icon" class="bi bi-github"></i></a></li>
                     </ul>
                 </nav>
             </header>

@@ -55,8 +55,13 @@ ul {
 }
 
 /* Padding between navbar links */
-li a#app {
+#nav-link-app {
     margin-right: 5vw;
+}
+
+#nav-link-app:hover,
+#nav-link-src:hover {
+    cursor: pointer;
 }
 
 i#nav-icon {
@@ -114,6 +119,7 @@ a[href*="index"] {
 #src-button:hover, 
 #app-button:hover {
     border-color: var(--black);
+    cursor: pointer;
 }
 
 #app-button {
