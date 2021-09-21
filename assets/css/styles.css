@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+/* Custom color properties */
+:root {
+    --green: rgb(0, 150, 0);
+    --transparent-green: rgba(0, 200, 0, .6);
+    --light-green: rgb(0, 170, 0);
+    --transparent-light-green: rgba(0, 170, 0, .5);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --transparent-red: rgba(200, 0, 0, .6);
+    --transparent-blue: rgba(0, 0, 200, .6);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,40 +27,55 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 /*--- Styling for items in the header-component ---*/
+header-component {
+    -webkit-position: sticky;
+    position: sticky;
+}
+
 header {
-    position: -webkit-sticky;
+    background-color: var(--green); 
+    position: relative;
     top: 0;
     display: flex;
-    flex-direction: row;
     padding-bottom: .5em;
 }
 
 nav {
     position: absolute;
-    right: .5em;
-    top: .5em;
+    top: 50%;
+    -webkit-transform: translate(80vw, -50%);
+    transform: translate(80vw, -50%);
 }
 
 ul {
-    right: .5em;
-    margin-right: .5em;
     list-style-type: none;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: center;
 }
 
-li {
-    margin: .5em;
+/* Padding between navbar links */
+#nav-link-app {
+    margin-right: 5vw;
 }
 
-.nav-item {
-    font-size: 2em;
+#nav-link-app:hover,
+#nav-link-src:hover {
+    cursor: pointer;
 }
 
+i#nav-icon {
+    color: var(--white);
+    font-size: 2.2em;
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+/* Top-left logo */
 a[href*="index"] {
     display: flex;
-    margin-left: .5em;
     margin-top: .5em;
+    float: left;
 }
 
 .main-logo {
@@ -62,7 +89,7 @@ a[href*="index"] {
 /*--- Styling for the intro section (after the header-component) ---*/
 
 .intro-section {
-    background-color: rgba(0, 170, 0, .5);
+    background-color: var(--transparent-light-green);
     display: block;
 }
 
@@ -80,25 +107,31 @@ a[href*="index"] {
     padding-bottom: 1em;
 }
 
-.src-button, 
-.app-button {
+#src-button, 
+#app-button {
     font-size: 1.5em;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     display: inline-block;
     padding: .5em;
     border-radius: .5em;
 }
 
-.app-button {
-    background-color: rgb(0, 150, 0);
+#src-button:hover, 
+#app-button:hover {
+    border-color: var(--black);
+    cursor: pointer;
 }
 
-.src-button {
-    background-color: rgb(0, 0, 0);
+#app-button {
+    background-color: var(--green);
 }
 
-.app-button i, 
-.src-button i {
+#src-button {
+    background-color: var(--black);
+}
+
+#app-button i, 
+#src-button i {
     padding-right: .5em;
 }
 
@@ -107,7 +140,7 @@ a[href*="index"] {
 .attributes-section {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(0, 170, 0);
+    background-color: var(--light-green);
     padding: 1em;
     height: 30vh;
 }
@@ -125,20 +158,15 @@ a[href*="index"] {
 }
 
 #design.attribute {
-    background-color: rgba(0, 200, 0, .6);
+    background-color: var(--transparent-green);
 }
-
-/* design icon */
-
 
 #fast.attribute {
-    background-color: rgba(200, 0, 0, .6);
+    background-color: var(--transparent-red);
 }
 
-
-
 #data.attribute {
-    background-color: rgba(0, 0, 200, .6);
+    background-color: var(--transparent-blue);
 }
 
 /* Attribute section Icons */
@@ -150,7 +178,7 @@ a[href*="index"] {
 /*--- Styling for the footer-component ---*/
 
 footer {
-    background-color: rgb(0, 150, 0);
+    background-color: var(--green);
 }
 
 .footer-text {
