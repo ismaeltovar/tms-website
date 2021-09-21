@@ -7,6 +7,7 @@
     --light-green: rgb(0, 170, 0);
     --transparent-light-green: rgba(0, 170, 0, .5);
     --black: rgb(0, 0, 0);
+    --gray: rgb(40, 40, 40);
     --white: rgb(255, 255, 255);
     --transparent-red: rgba(200, 0, 0, .6);
     --transparent-blue: rgba(0, 0, 200, .6);
@@ -18,13 +19,13 @@
     box-sizing: border-box;
 }
 
-a:link { text-decoration: none; }
+a:link { text-decoration: none; color: var(--gray);}
 
-a:visited { text-decoration: none; }
+a:visited { text-decoration: none; color: var(--gray);}
 
-a:hover { text-decoration: none; }
+a:hover { text-decoration: none; color: var(--white);}
 
-a:active { text-decoration: none; }
+a:active { text-decoration: none; color: var(--white);}
 
 /*--- Styling for items in the header-component ---*/
 header-component {
