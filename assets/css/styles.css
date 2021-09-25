@@ -175,14 +175,20 @@ i#nav-icon {
 /*--- Styling for the footer-component ---*/
 
 footer {
-    background-color: var(--green);
+    background-color: var(--black);
 }
 
 .footer-text {
+    color: var(--white);
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 3em 1em;
+}
+
+.footer-text a{
+    font-weight: bold;
+    font-style: italic;
 }
 
 .cr-notice,
