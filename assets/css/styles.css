@@ -3,14 +3,15 @@
 /* Custom color properties */
 :root {
     --green: rgb(0, 150, 0);
-    --transparent-green: rgba(0, 200, 0, .6);
+    --red: rgb(150, 0, 0);
+    --orange: rgb(150, 130, 0);
     --light-green: rgb(0, 170, 0);
-    --transparent-light-green: rgba(0, 170, 0, .5);
     --black: rgb(0, 0, 0);
     --gray: rgb(40, 40, 40);
-    --white: rgb(255, 255, 255);
+    --white: rgb(240, 240, 240);
     --transparent-red: rgba(200, 0, 0, .6);
     --transparent-blue: rgba(0, 0, 200, .6);
+    --transparent-green: rgba(0, 200, 0, .6);
 }
 
 * {
@@ -19,13 +20,15 @@
     box-sizing: border-box;
 }
 
-a:link { text-decoration: none; color: var(--gray);}
+a { color: var(--white) } /* Added in order for App button in navbar to display as white when not clicked */
 
-a:visited { text-decoration: none; color: var(--gray);}
+a:link { text-decoration: none; color: var(--white);}
 
-a:hover { text-decoration: none; color: var(--white);}
+a:visited { text-decoration: none; color: var(--white);}
 
-a:active { text-decoration: none; color: var(--white);}
+a:hover { text-decoration: none; color: var(--green); cursor: pointer;}
+
+a:active { text-decoration: none; color: var(--green);}
 
 /*--- Styling for items in the header-component ---*/
 header-component {
@@ -34,7 +37,7 @@ header-component {
 }
 
 header {
-    background-color: var(--green); 
+    background-color: var(--black);
     position: relative;
     top: 0;
     display: flex;
@@ -60,27 +63,21 @@ ul {
     margin-right: 5vw;
 }
 
-#nav-link-app:hover,
-#nav-link-src:hover {
-    cursor: pointer;
-}
-
 i#nav-icon {
-    color: var(--white);
-    font-size: 2.2em;
-    background-color: var(--green);
-    border-color: var(--green);
+  font-size: 2.2em;
 }
 
 /* Top-left logo */
-a[href*="index"] {
+.title-and-logo {
     display: flex;
     margin-top: .5em;
+    margin-left: 2em;
     float: left;
 }
 
 .main-logo {
     margin: .5em;
+    width: 4em;
 }
 
 .main-title {
@@ -90,7 +87,7 @@ a[href*="index"] {
 /*--- Styling for the intro section (after the header-component) ---*/
 
 .intro-section {
-    background-color: var(--transparent-light-green);
+    background-color: var(--green);
     display: block;
     height: 70vh;
 }
@@ -106,7 +103,7 @@ a[href*="index"] {
     text-align: center;
 }
 
-#src-button, 
+#src-button,
 #app-button {
     font-size: 1.5em;
     color: var(--white);
@@ -116,21 +113,21 @@ a[href*="index"] {
     border-radius: .5em;
 }
 
-#src-button:hover, 
+#src-button:hover,
 #app-button:hover {
     border-color: var(--black);
     cursor: pointer;
 }
 
 #app-button {
-    background-color: var(--green);
+    background-color: var(--orange);
 }
 
 #src-button {
-    background-color: var(--black);
+    background-color: var(--gray);
 }
 
-#app-button i, 
+#app-button i,
 #src-button i {
     padding-right: .5em;
 }
@@ -140,12 +137,14 @@ a[href*="index"] {
 .attributes-section {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--light-green);
+    background-color: var(--green);
     padding: 1em;
     height: 30vh;
 }
 
 .attribute {
+    background-color: var(--gray);
+    color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,20 +156,9 @@ a[href*="index"] {
     margin: .5em;
 }
 
-#design.attribute {
-    background-color: var(--transparent-green);
-}
-
-#fast.attribute {
-    background-color: var(--transparent-red);
-}
-
-#data.attribute {
-    background-color: var(--transparent-blue);
-}
-
 /* Attribute section Icons */
 .attribute i {
+    color: var(--green);
     font-size: 2em;
     padding: .2em;
 }
@@ -178,14 +166,20 @@ a[href*="index"] {
 /*--- Styling for the footer-component ---*/
 
 footer {
-    background-color: var(--green);
+    background-color: var(--black);
 }
 
 .footer-text {
+    color: var(--white);
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 3em 1em;
+}
+
+.footer-text a{
+    font-weight: bold;
+    font-style: italic;
 }
 
 .cr-notice,
