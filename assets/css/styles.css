@@ -137,12 +137,14 @@ i#nav-icon {
 .attributes-section {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--light-green);
+    background-color: var(--green);
     padding: 1em;
     height: 30vh;
 }
 
 .attribute {
+    background-color: var(--gray);
+    color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,20 +156,9 @@ i#nav-icon {
     margin: .5em;
 }
 
-#design.attribute {
-    background-color: var(--transparent-green);
-}
-
-#fast.attribute {
-    background-color: var(--transparent-red);
-}
-
-#data.attribute {
-    background-color: var(--transparent-blue);
-}
-
 /* Attribute section Icons */
 .attribute i {
+    color: var(--green);
     font-size: 2em;
     padding: .2em;
 }
