@@ -87,7 +87,7 @@ i#nav-icon {
 /*--- Styling for the intro section (after the header-component) ---*/
 
 .intro-section {
-    background-color: var(--transparent-light-green);
+    background-color: var(--green);
     display: block;
     height: 70vh;
 }
@@ -103,7 +103,7 @@ i#nav-icon {
     text-align: center;
 }
 
-#src-button, 
+#src-button,
 #app-button {
     font-size: 1.5em;
     color: var(--white);
@@ -113,21 +113,21 @@ i#nav-icon {
     border-radius: .5em;
 }
 
-#src-button:hover, 
+#src-button:hover,
 #app-button:hover {
     border-color: var(--black);
     cursor: pointer;
 }
 
 #app-button {
-    background-color: var(--green);
+    background-color: var(--orange);
 }
 
 #src-button {
-    background-color: var(--black);
+    background-color: var(--gray);
 }
 
-#app-button i, 
+#app-button i,
 #src-button i {
     padding-right: .5em;
 }
