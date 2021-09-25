@@ -3,14 +3,15 @@
 /* Custom color properties */
 :root {
     --green: rgb(0, 150, 0);
-    --transparent-green: rgba(0, 200, 0, .6);
+    --red: rgb(150, 0, 0);
+    --orange: rgb(150, 130, 0);
     --light-green: rgb(0, 170, 0);
-    --transparent-light-green: rgba(0, 170, 0, .5);
     --black: rgb(0, 0, 0);
     --gray: rgb(40, 40, 40);
-    --white: rgb(255, 255, 255);
+    --white: rgb(240, 240, 240);
     --transparent-red: rgba(200, 0, 0, .6);
     --transparent-blue: rgba(0, 0, 200, .6);
+    --transparent-green: rgba(0, 200, 0, .6);
 }
 
 * {
@@ -19,13 +20,15 @@
     box-sizing: border-box;
 }
 
-a:link { text-decoration: none; color: var(--gray);}
+a { color: var(--white) } /* Added in order for App button in navbar to display as white when not clicked */
 
-a:visited { text-decoration: none; color: var(--gray);}
+a:link { text-decoration: none; color: var(--white);}
 
-a:hover { text-decoration: none; color: var(--white);}
+a:visited { text-decoration: none; color: var(--white);}
 
-a:active { text-decoration: none; color: var(--white);}
+a:hover { text-decoration: none; color: var(--green); cursor: pointer;}
+
+a:active { text-decoration: none; color: var(--green);}
 
 /*--- Styling for items in the header-component ---*/
 header-component {
