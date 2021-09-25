@@ -10,8 +10,8 @@ class Header extends HTMLElement {
         this.innerHTML = `
             <header>
                 <!--Main logo with text (top left corner of website) -->
-                <div class="title-and-logo">
-                    <a href="index.html">
+                <div>
+                    <a class="title-and-logo" ref="index.html">
                         <img class="main-logo" src="assets/icon/favicon.ico" alt="Track My Stock! logo">
                         <h1 class="main-title">Track My Stock!</h1>
                     </a>
