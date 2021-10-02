@@ -2,22 +2,19 @@
 
 /* Custom color properties */
 :root {
-    --green: rgb(0, 150, 0);
-    --red: rgb(150, 0, 0);
-    --orange: rgb(150, 130, 0);
-    --light-green: rgb(0, 170, 0);
-    --black: rgb(0, 0, 0);
-    --gray: rgb(40, 40, 40);
-    --white: rgb(240, 240, 240);
-    --transparent-red: rgba(200, 0, 0, .6);
-    --transparent-blue: rgba(0, 0, 200, .6);
-    --transparent-green: rgba(0, 200, 0, .6);
+	--green: rgb(0, 150, 0);
+	--red: rgb(150, 0, 0);
+	--orange: rgb(150, 130, 0);
+	--light-green: rgb(0, 170, 0);
+	--black: rgb(0, 0, 0);
+	--gray: rgb(40, 40, 40);
+	--white: rgb(240, 240, 240);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 a { color: var(--white) } /* Added in order for App button in navbar to display as white when not clicked */
@@ -32,35 +29,35 @@ a:active { text-decoration: none; color: var(--green);}
 
 /*--- Styling for items in the header-component ---*/
 header-component {
-    -webkit-position: sticky;
-    position: sticky;
+	-webkit-position: sticky;
+	position: sticky;
 }
 
 header {
-    background-color: var(--black);
-    position: relative;
-    top: 0;
-    display: flex;
-    padding-bottom: .5em;
+	background-color: var(--black);
+	position: relative;
+	top: 0;
+	display: flex;
+	padding-bottom: .5em;
 }
 
 nav {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(80vw, -50%);
-    transform: translate(80vw, -50%);
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(80vw, -50%);
+	transform: translate(80vw, -50%);
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 /* Padding between navbar links */
 #nav-link-app {
-    margin-right: 5vw;
+	margin-right: 5vw;
 }
 
 i#nav-icon {
@@ -69,120 +66,121 @@ i#nav-icon {
 
 /* Top-left logo */
 .title-and-logo {
-    display: flex;
-    margin-top: .5em;
-    margin-left: 2em;
-    float: left;
+	display: flex;
+	margin-top: .5em;
+	margin-left: 2em;
+	float: left;
 }
 
 .main-logo {
-    margin: .5em;
-    width: 4em;
+	margin: .5em;
+	width: 4em;
 }
 
 .main-title {
-    margin: .5em;
+	margin: .5em;
 }
 
 /*--- Styling for the intro section (after the header-component) ---*/
 
 .intro-section {
-    background-color: var(--green);
-    display: block;
-    height: 70vh;
+	background-color: var(--green);
+	display: block;
+	height: 70vh;
 }
 
 .intro-description {
-    display: block;
-    text-align: center;
-    padding: 20vh .5em 10vh;
+	display: block;
+	text-align: center;
+	padding: 20vh .5em 10vh;
 }
 
 .intro-buttons {
-    display: block;
-    text-align: center;
+	display: block;
+	text-align: center;
 }
 
 #src-button,
 #app-button {
-    font-size: 1.5em;
-    color: var(--white);
-    display: inline-block;
-    padding: .5em 4vw;
-    margin: 0em 1vw;
-    border-radius: .5em;
+	font-size: 1.5em;
+	color: var(--white);
+	display: inline-block;
+	padding: .5em 4vw;
+	margin: 0em 1vw;
+	border-radius: .5em;
 }
 
 #src-button:hover,
 #app-button:hover {
-    border-color: var(--black);
-    cursor: pointer;
+	border-color: var(--black);
+	cursor: pointer;
+	transform: scale(.95);
 }
 
 #app-button {
-    background-color: var(--orange);
+	background-color: var(--orange);
 }
 
 #src-button {
-    background-color: var(--gray);
+	background-color: var(--gray);
 }
 
 #app-button i,
 #src-button i {
-    padding-right: .5em;
+	padding-right: .5em;
 }
 
 /*--- Styling for the attributes section (under the intro-section) ---*/
 
 .attributes-section {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--green);
-    padding: 1em;
-    height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: var(--green);
+	padding: 1em;
+	height: 30vh;
 }
 
 .attribute {
-    background-color: var(--gray);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: .5em;
-    padding: .5em;
-    text-align: center;
-    width: 30vw;
-    padding: 1em;
-    margin: .5em;
+	background-color: var(--gray);
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: .5em;
+	padding: .5em;
+	text-align: center;
+	width: 30vw;
+	padding: 1em;
+	margin: .5em;
 }
 
 /* Attribute section Icons */
 .attribute i {
-    color: var(--green);
-    font-size: 2em;
-    padding: .2em;
+	color: var(--green);
+	font-size: 2em;
+	padding: .2em;
 }
 
 /*--- Styling for the footer-component ---*/
 
 footer {
-    background-color: var(--black);
+	background-color: var(--black);
 }
 
 .footer-text {
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 3em 1em;
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 3em 1em;
 }
 
 .footer-text a{
-    font-weight: bold;
-    font-style: italic;
+	font-weight: bold;
+	font-style: italic;
 }
 
 .cr-notice,
 .hosting-notice {
-    padding: .3em;
+	padding: .3em;
 }
