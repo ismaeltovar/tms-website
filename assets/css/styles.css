@@ -7,7 +7,8 @@
 	--orange: rgb(150, 130, 0);
 	--light-green: rgb(0, 170, 0);
 	--black: rgb(0, 0, 0);
-	--gray: rgb(40, 40, 40);
+	--dark-gray: rgb(20, 20, 20);
+	--gray: rgb(50, 50, 50);
 	--white: rgb(240, 240, 240);
 }
 
@@ -114,7 +115,7 @@ i#nav-icon {
 #app-button:hover {
 	border-color: var(--black);
 	cursor: pointer;
-	transform: scale(.95);
+	transform: scale(1.05);
 }
 
 #app-button {
@@ -133,9 +134,9 @@ i#nav-icon {
 /*--- Styling for the attributes section (under the intro-section) ---*/
 
 .attributes-section {
+	background-color: var(--dark-gray);
 	display: flex;
 	justify-content: space-evenly;
-	background-color: var(--green);
 	padding: 1em;
 	height: 30vh;
 }
