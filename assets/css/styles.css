@@ -104,13 +104,14 @@ i#nav-icon {
 	padding: .5em 4vw;
 	margin: 0em 1vw;
 	border-radius: .5em;
+	border: .05em solid var(--white);
 }
 
 #src-button:hover,
 #app-button:hover {
-	border-color: var(--black);
+	border-color: var(--white);
 	cursor: pointer;
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 
 #app-button {
