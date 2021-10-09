@@ -1,1 +1,1 @@
-devNotice = () => alert("This app is currently under development. Check back later for more details."); 
+devNotice = () => alert("This app is currently under development. Check back later for more details. In the meantime, you can follow the project's development by starring or watching the project's repository on Github."); 
