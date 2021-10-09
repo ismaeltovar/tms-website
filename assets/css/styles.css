@@ -29,31 +29,26 @@ a:hover { text-decoration: none; color: var(--green); cursor: pointer;}
 a:active { text-decoration: none; color: var(--green);}
 
 /*--- Styling for items in the header-component ---*/
-header-component {
-	-webkit-position: sticky;
-	position: sticky;
-}
 
 header {
+	-webkit-position: sticky;
+	position: sticky;
 	background-color: var(--black);
-	position: relative;
 	top: 0;
 	display: flex;
-	padding-bottom: .5em;
+	padding: 1.1em 0em;
+	align-items: center;
+	z-index: 999;
 }
 
 nav {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translate(80vw, -50%);
-	transform: translate(80vw, -50%);
+	margin: 0em 2em 0em auto;
 }
 
 ul {
-	list-style-type: none;
+	list-style-type: none; /* removes styling of list items (bullet points)*/
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	margin: auto 0em;
 }
 
 /* Padding between navbar links */
@@ -62,24 +57,24 @@ ul {
 }
 
 i#nav-icon {
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 
 /* Top-left logo */
 .title-and-logo {
 	display: flex;
-	margin-top: .5em;
 	margin-left: 2em;
-	float: left;
+	align-items: center;
 }
 
 .main-logo {
-	margin: .5em;
+	margin: 0em .5em;
 	width: 4em;
 }
 
 .main-title {
-	margin: .5em;
+	font-size: 2.2em;
+	margin-left: .4em;
 }
 
 /*--- Styling for the intro section (after the header-component) ---*/
