@@ -1,0 +1,49 @@
+@import 'index.css';
+
+/*--- Styling for items in the header-component ---*/
+header {
+	-webkit-position: sticky;
+	position: sticky;
+	background-color: var(--black);
+	top: 0;
+	display: flex;
+	padding: 1.1em 0em;
+	align-items: center;
+	z-index: 999;
+}
+
+nav {
+	margin: 0em 2em 0em auto;
+}
+
+ul {
+	list-style-type: none; /* removes styling of list items (bullet points)*/
+	display: flex;
+	margin: auto 0em;
+}
+
+/* Padding between navbar links */
+#nav-link-app {
+	margin-right: 5vw;
+}
+
+i#nav-icon {
+  font-size: 2.5em;
+}
+
+/* Top-left logo */
+.title-and-logo {
+	display: flex;
+	margin-left: 2em;
+	align-items: center;
+}
+
+.main-logo {
+	margin: 0em .5em;
+	width: 4em;
+}
+
+.main-title {
+	font-size: 2.2em;
+	margin-left: .4em;
+}

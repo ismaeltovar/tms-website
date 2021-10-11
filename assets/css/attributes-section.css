@@ -1,0 +1,31 @@
+@import 'index.css';
+
+/*--- Styling for the attributes section (under the intro-section) ---*/
+.attributes-section {
+	background-color: var(--dark-gray);
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1em;
+	height: 30vh;
+}
+
+.attribute {
+	background-color: var(--gray);
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: .5em;
+	padding: .5em;
+	text-align: center;
+	width: 30vw;
+	padding: 1em;
+	margin: .5em;
+}
+
+/* Attribute section Icons */
+.attribute i {
+	color: var(--green);
+	font-size: 2em;
+	padding: .2em;
+}

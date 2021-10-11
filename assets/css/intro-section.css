@@ -1,0 +1,50 @@
+@import 'index.css';
+
+/*--- Styling for the intro section (after the header-component) ---*/
+.intro-section {
+	background-color: var(--green);
+	display: block;
+	height: 70vh;
+}
+
+.intro-description {
+	display: block;
+	text-align: center;
+	padding: 20vh .5em 10vh;
+}
+
+.intro-buttons {
+	display: block;
+	text-align: center;
+}
+
+#src-button,
+#app-button {
+	font-size: 1.5em;
+	color: var(--white);
+	display: inline-block;
+	padding: .5em 4vw;
+	margin: 0em 1vw;
+	border-radius: .5em;
+	border: .05em solid var(--white);
+}
+
+#src-button:hover,
+#app-button:hover {
+	border-color: var(--white);
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#app-button {
+	background-color: var(--orange);
+}
+
+#src-button {
+	background-color: var(--gray);
+}
+
+#app-button i,
+#src-button i {
+	padding-right: .5em;
+}

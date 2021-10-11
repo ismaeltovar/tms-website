@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Custom color properties */
+:root {
+	--green: rgb(0, 150, 0);
+	--red: rgb(150, 0, 0);
+	--orange: rgb(150, 130, 0);
+	--light-green: rgb(0, 170, 0);
+	--black: rgb(0, 0, 0);
+	--dark-gray: rgb(20, 20, 20);
+	--gray: rgb(50, 50, 50);
+	--white: rgb(240, 240, 240);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a { color: var(--white) } /* Added in order for App button in navbar to display as white when not clicked */
+
+a:link { text-decoration: none; color: var(--white);}
+
+a:visited { text-decoration: none; color: var(--white);}
+
+a:hover { text-decoration: none; color: var(--green); cursor: pointer;}
+
+a:active { text-decoration: none; color: var(--green);}
